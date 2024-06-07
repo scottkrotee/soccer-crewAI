@@ -17,17 +17,15 @@ Before running this script, ensure you have the following dependencies installed
 - `os` - Used to set environment variables.
 
 You can install the necessary packages using pip:
-
 pip install crewai langchain_community
-Setup
-Obtain an OpenAI API key and replace "YOUR KEY" in the script with your actual key.
-Install all required Python packages mentioned in the Dependencies section.
-Usage
-To run the script, navigate to the directory containing the script and execute it using Python:
 
-Copy code
-python path_to_script.py
-Replace path_to_script.py with the actual path to the script if it is not in your current directory.
+## Setup
+Obtain an OpenAI API key and replace "YOUR KEY" in the script with your actual key.
+
+Install all required Python packages mentioned in the Dependencies section.
+
+## Usage
+To run the script, navigate to the directory containing the script and execute it using Python:
 
 ## Output
 The script will output the results of the research and reporting tasks directly to the console. Look for the "######################" separator in the console output for the results.
