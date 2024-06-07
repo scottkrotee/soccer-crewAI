@@ -1,5 +1,3 @@
-# Soccer CrewAI
- 
 # Soccer Event Research and Reporting Automation
 
 This script utilizes the `crewai` framework to define agents with specific roles: researching and reporting on NCAA and professional soccer combines or tryouts scheduled for 2024.
