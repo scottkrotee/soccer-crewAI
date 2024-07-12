@@ -1,12 +1,21 @@
 # Soccer Event Research and Reporting Automation
 
-This script utilizes the `crewai` framework to define agents with specific roles: researching and reporting on NCAA and professional soccer combines or tryouts scheduled for 2024.
+combine_finder utilizes the `crewai` framework to define agents with specific roles: researching and reporting on NCAA and professional soccer combines or tryouts scheduled for 2024.
+
+stats_finder_crew_example utilizes the `crewai` framework as a simple example defining agents with specific roles: researching and reporting statistics of athletes.
 
 ## Functionality
 
+### combine_finder
 - **Event Researcher Agent**: Searches for all upcoming NCAA and professional soccer combines or tryouts in 2024.
 - **Event Reporter Agent**: Organizes and reports the findings in a calendar format.
 - Utilizes the `DuckDuckGoSearchRun` tool from `langchain_community` for internet searches.
+
+### stats_finder_crew_example
+- **Database Researcher Agent**: Searches for all useful databases relating to soccer statistics.
+- **Researcher Agent**: Finds all individual player statistics for [insert athlete name] using the databases found by the Database Researcher.
+- **Reporter Agent**: Organizes and reports all individual player statistics for [insert athlete name] from the Researcher.
+- Utilizes the `DuckDuckGoSearchRun` tool from `langchain_community` for internet searches. [search_tool]
 
 ## Dependencies
 
@@ -33,9 +42,10 @@ The script will output the results of the research and reporting tasks directly 
 ## Configuration
 The script is configured to be verbose, which means it will provide detailed logs of its operations.
 Errors during task execution will be printed directly to the console.
-Limitations
+
+## Limitations
 The script relies on the availability and responsiveness of external APIs (e.g., OpenAI's API and DuckDuckGo search).
-It currently only supports events scheduled for 2024. Adjustments to the Agent's goals might be necessary for other years or types of events.
+Adjustments to the Agent's goals might be necessary for other years, types of events, and more specific details.
 
 ## License
 This script is provided "as is", without warranty of any kind, express or implied. Feel free to modify and use it as needed.
